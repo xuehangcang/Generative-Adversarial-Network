@@ -139,7 +139,7 @@ for epoch in range(epochs):
     save_image_grid(epoch, generator(batch_size), ncol=8)
 
 # Save the generator network
-torch.save(generator.state_dict(), "generator.pth")
+torch.save(generator.state_dict(), "generator-200.pth")
 generator.eval()
 with torch.no_grad():
     generated_images = generator(1)
